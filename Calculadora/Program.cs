@@ -9,7 +9,10 @@ namespace Calculadora
         {
             Operacoes op = new Operacoes();
             float[] values = new float[]{1, 5, 7, 1, 3.4f};
-            Console.WriteLine(op.addition(values));
+            Console.WriteLine("Soma: " + op.addition(values));
+            Console.WriteLine("Subtração: " + op.subtration(values));
+            Console.WriteLine("Multiplicação: " + op.multiplication(values));
+            Console.WriteLine("Divisão: " + op.division(values));
         }
     }
 }
