@@ -1,4 +1,5 @@
 ﻿using System;
+using Calculadora.Lib;
 
 namespace Calculadora
 {
@@ -6,7 +7,9 @@ namespace Calculadora
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Operacoes op = new Operacoes();
+            float[] values = new float[]{1, 5, 7, 1, 3.4f};
+            Console.WriteLine(op.addition(values));
         }
     }
 }
